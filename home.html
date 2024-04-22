@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+  <title>Care Dot</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <script type="module" src="logout.js"></script>
+    <div class="container">
+        <div class="menu">
+            <div class="login">
+                <button onclick="window.location.href = 'home.html';" class="b-search">Home</button>
+                <button onclick="window.location.href = 'search.html';" class="b-search">Search</button>        
+                <button onclick="window.location.href = 'doctors.html';" class="b-search">Book Doctor</button>   
+                <button onclick="window.location.href = 'report.html';" class="b-search">Reports</button>
+                <button onclick="window.location.href = 'admission.html';" class="b-search">Add Resident</button>
+                <button onclick=logout() class="b-logout">Logout</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="welcome">
+                <h1>Welcome,</h1>
+            </div>
+            <div class="center">
+                <div class="notification" onclick="window.location.href='notification.html'">
+                    <h3> Notifications</h3>
+                </div>
+                <div class="reminder" onclick="window.location.href='remainder.html'">
+                    <h4>Reminder!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Include home.js -->
+    
+    
+</body>
+</html>

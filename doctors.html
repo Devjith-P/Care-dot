@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Care Dot</title>
+  <link rel="stylesheet" href="doctor.css">
+  <script type="module" src="logout.js"></script>
+  <script type="module" src="doctor.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+      <div class="menu">
+          <div class="login">
+              <button onclick="window.location.href = 'home.html';" class="b-search">Home</button>
+              <button onclick="window.location.href = 'search.html';" class="b-search">Search</button>        
+              <button onclick="window.location.href = 'doctors.html';" class="b-search">Book Doctor</button>   
+              <button onclick="window.location.href = 'report.html';" class="b-search">Reports</button>
+              <button onclick="window.location.href = 'admission.html';" class="b-search">Add Resident</button>
+              <button onclick=logout() class="b-logout">Logout</button>
+          </div>
+      </div>
+        <div class="right-side">
+            <div class="formbold-main-wrapper">
+                <div class="formbold-form-wrapper">
+                  
+                  
+              
+                  <form id="residentForm" >
+                    
+              
+                    <div class="formbold-input-flex">
+                      <div>
+                        <label for="firstname" class="formbold-form-label">
+                          Resident Name
+                        </label>
+                        <input
+                          type="text"
+                          name="firstname"
+                          id="firstname"
+                          class="formbold-form-input"
+                        />
+                      </div>
+                      <div>
+                        <label for="doctorname" class="formbold-form-label"> Doctor Name </label>
+                        <select
+                          name="doctorname"
+                          id="doctorname"
+                          class="formbold-form-input"
+                          style="appearance: none; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 8px;"
+                        >
+                          <option value="doctor1">Doctor Name 1</option>
+                          <option value="doctor2">Doctor Name 2</option>
+                          <!-- Add more options for other doctors -->
+                        </select>
+                      </div>
+                    </div>
+              
+                    
+              
+                    <div class="formbold-mb-3">
+                      <label for="address" class="formbold-form-label">
+                        Purpose For Visit
+                      </label>
+                      <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        class="formbold-form-input"
+                      />
+                    </div>
+              
+                    
+              
+                    
+                    <div class="formbold-input-flex">
+                      <div>
+                        <label for="post" class="formbold-form-label"> Select Date </label>
+                        <input
+                          type="text"
+                          name="post"
+                          id="post"
+                          class="formbold-form-input"
+                          
+                        />
+                      </div>
+                      
+                    </div>
+              
+                    
+              
+                    <button class="formbold-bt" type="submit">Book Now</button>
+                  </form>
+                </div>
+              </div>
+            
+            
+            
+            
+            
+
+        </div>
+        
+        
+    </div>
+
+
+
+
+</body>
